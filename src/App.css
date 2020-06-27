@@ -7,15 +7,20 @@
   height: 80px;
 }
 
-.App-header {
+header {
   background-color: #222;
-  height: 50px;
+  height: 80px;
   padding: 20px;
   color: white;
   text-align: left;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1em;
   font-weight: bold;
+}
+
+header img {
+  height: 100%;
+  padding-right: 20px;
 }
 
 .App-title {
@@ -27,6 +32,23 @@
   font-size: large;
 }
 
+.containerCards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.containerCards img {
+  height: 80%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card {
+  width: 100%;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -34,9 +56,6 @@
   to {
     transform: rotate(360deg);
   }
-}
-.search {
-  padding: 5px 0 20px 0;
 }
 
 tr {
@@ -52,6 +71,54 @@ tr {
   text-align: center;
 }
 
+.footer li {
+  list-style: none;
+}
+
 .card {
   width: 18rem;
+}
+
+/* Search Booking */
+
+.search {
+  padding: 5px 0 20px 0;
+}
+
+.search-wrapper {
+  border-top: 1px solid #e9ecef;
+}
+
+.search-box label {
+  font-weight: bold;
+  padding: 0.75rem;
+  margin-bottom: 0;
+  color: #5b5757;
+}
+
+.search-row {
+  display: flex;
+  border-top: 2px solid #e9ecef;
+  padding-top: 15px;
+}
+
+.search-row input {
+  margin-right: 10px;
+}
+
+.highlightedRow {
+  background-color: lightseagreen;
+}
+
+.search-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.customer-profile {
+  width: 50%;
+  padding: 0px 20px;
+  text-align: center;
+  border: 1px solid rgba(119, 136, 153, 0.466);
+  border-radius: 5px;
 }
